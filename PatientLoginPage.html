@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Hospital Patient login page</title>
+</head>
+<body>
+<style>
+body {
+  background-image: url('patient.jpg');
+}
+</style>
+
+<form name="PatientloginForm" method="post" action="FirstPage.html">
+<table width="50%"  align="center" bgcolor=white>
+
+<tr>
+<td colspan=2><left><font size=6><b>PATIENT LOGIN</b></font></center></td>
+</tr>
+
+<tr>
+<td><left>Patient ID:</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+
+<tr>
+<td><left>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><center><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if((form.userid.value == "Gaurish"||form.userid.value == "Jayant"||form.userid.value == "Piyush"||form.userid.value == "Abhishek") && form.pwd.value == "1234")
+{
+	alert("Welcome "+form.userid.value)
+	return true;
+}
+else
+{
+	alert("Error Patient ID or Password")
+	return false;
+}
+}
+</script>
+
+</body>
+</html>
